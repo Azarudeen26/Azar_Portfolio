@@ -1,0 +1,48 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  background-color: #0a0f10 !important;
+}
+
+.banner {
+  background: url('./bg.jpeg') center/cover no-repeat;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  color: white;
+}
+
+.banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.65);
+}
+
+.banner .container {
+  position: relative;
+  z-index: 2;
+}
+
+.banner img {
+  border: 3px solid #fff;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+}
+
+section {
+  padding: 80px 0;
+}
+
+.btn-dark {
+  background-color: #0d6efd;
+  border-radius: 25px;
+  padding: 10px 30px;
+}
+
+.btn-dark:hover {
+  background-color: #0b5ed7;
+}
